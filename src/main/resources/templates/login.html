@@ -1,0 +1,68 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="unique login form,leamug login form,boostrap login form,responsive login form,free css html login form,download login form">
+    <meta name="author" content="leamug">
+    <title>Unique Login Form | Bootstrap Templates</title>
+    <link href="css/style.css" rel="stylesheet" id="style">
+    <!-- Bootstrap core Library -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="custom-login d-flex justify-content-center align-items-center ">
+
+<div class="container text-center ">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 ">
+            
+              <div class="form-login"></br>
+                <h4>Secure Login</h4>
+                
+                <div th:if="${param.error}" class="alert alert-danger">
+                Invalid username and password
+                </div>
+                 <div th:if="${param.logout}" class="alert alert-danger">
+                you have been logged out
+                </div>
+                
+                </br>
+                <form th:action="@{/doLogin}" method="post">
+                <input type="text" style="color:white;"id="username" name="username" class="form-control input-sm chat-input" placeholder="username"/>
+                </br></br>
+                <input type="password" style="color:white;" id="password" name="password" class="form-control input-sm chat-input" placeholder="password"/>
+                </br></br>
+                <div class="wrapper">
+                        <span class="group-btn">
+                            <input type="submit" value="submit" class="btn btn-danger btn-md">
+                             <a href="/signUp/" class="btn btn-danger btn-md">SignUp <i class="fa fa-sign-in"></i></a>
+                        </span>
+                </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+   </section>
+
+
+</body>
+</html>
