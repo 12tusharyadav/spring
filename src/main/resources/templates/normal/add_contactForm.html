@@ -1,4 +1,5 @@
-<!doctype html>
+
+ <!doctype html>
 <html  lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
 
 <head>
@@ -10,7 +11,7 @@
 
 <h1>Add contact formpage</h1>
 
-<form  class="mt-2" th:action="@{/user/process-contact}" method="post" th:object="${contact}">
+<form  class="mt-2" th:action="@{/user/process-contact}" method="post" th:object="${contact}" enctype="multipart/form-data">
 
 
 <div class="form-group">
@@ -27,13 +28,14 @@ id="name"
 
 
 <div class="form-group">
-<label for="email">nickname</label>
-<input type="email" name="email"  class="form-control" id="email_field" placeholder="Enter nick name here"/>
+<label for="nickname">nickname</label>
+<input type="text" name="nickname"  class="form-control" id="email_field" placeholder="Enter nick name here"/>
 </div>
+
 
 <div class="form-group">
 <label for="password">email</label>
-<input type="password" name="password"class="form-control" id="password_field" placeholder="Enter email here"/>
+<input type="email" name="email"class="form-control" id="password_field" placeholder="Enter email here"/>
 </div>
 
 <div class="form-group">
@@ -70,4 +72,5 @@ id="name"
 
 
 </body>
-</html> 
+</html> -->
+afsdbnsgfbjba tushar yadav
